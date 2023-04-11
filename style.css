@@ -3,8 +3,8 @@ body {
     margin: 0;
 }
 
-.block1, .block2, .block3, .block4 {
-    padding: 10px 200px 100px 200px;
+.block1, .block2, .block3 {
+    padding: 10px 10% 100px 10%;
 }
 
 .block1 {
@@ -78,7 +78,7 @@ ul {
 .block2 {
     display: flex;
     flex-direction: column;
-    padding: 50px 100px 150px 100px;
+    
     gap: 50px;
 }
 .info-head {
@@ -105,21 +105,24 @@ ul {
 .block3 {
     background: #e5e7eb;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    justify-content: center;
 }
+.quote-box {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20% 50px 20%;
+}
+
 .quote {
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
     color: #1f2937;
-    max-width: 1000px;
     text-align: start;
 }
 
 .god {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold;
     color: #1f2937;
     text-align: end;
@@ -127,9 +130,23 @@ ul {
 
 .block4 {
     display: flex;
+    justify-content: space-evenly;
+    background: #3882f6;
+    align-items: center;
+    margin: 2% 25% 2% 25%;
+    padding: 2% 2% 2% 2%;
+    border-radius: 8px;
 }
 
-button {
+.caller {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: #e5e7eb
+
+}
+
+.awesome-button {
     background-color: #3882f6;
     border: 0;
     color: #f9faf8;
@@ -138,4 +155,25 @@ button {
     max-width: 150px;
     padding: 12px;
     font-weight: bold;
+}
+
+.block4-button {
+    background-color: #3882f6;
+    border: 2px solid  #e5e7eb;
+    color: #f9faf8;
+    border-radius: 4px;
+    font-size: 18px;
+    max-width: 150px;
+    min-width: 150px;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1f2937;
+    padding: 2% 2% 2% 2%;
+    font-size: 18px;
+    color: #e5e7eb
 }
